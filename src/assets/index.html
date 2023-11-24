@@ -1,31 +1,116 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <title>Hra s písmenkami I a Y</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          crossorigin="anonymous">
+<div class="container py-3">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="64" height="40" viewBox="0 0 1500 935">
+                    <g transform="matrix(1,0,0,1,-0.9090909090909918,0.3785425101214628)">
+                        <svg viewBox="0 0 396 247" data-background-color="#f9f9f9" preserveAspectRatio="xMidYMid meet"
+                             height="935" width="1500" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="tight-bounds" transform="matrix(1,0,0,1,0.2400000000000091,-0.09999999999999432)">
+                                <svg viewBox="0 0 395.52 247.2" height="247.2" width="395.52">
+                                    <g>
+                                        <svg></svg>
+                                    </g>
+                                    <g>
+                                        <svg viewBox="0 0 395.52 247.2" height="247.2" width="395.52">
+                                            <g transform="matrix(1,0,0,1,140.58178265895953,47.215199999999996)">
+                                                <svg viewBox="0 0 114.35643468208092 152.7696" height="152.7696"
+                                                     width="114.35643468208092">
+                                                    <g>
+                                                        <svg viewBox="0 0 114.35643468208092 152.7696" height="152.7696"
+                                                             width="114.35643468208092">
+                                                            <g>
+                                                                <svg viewBox="0 0 114.35643468208092 152.7696"
+                                                                     height="152.7696" width="114.35643468208092">
+                                                                    <g>
+                                                                        <svg viewBox="0 0 114.35643468208092 152.7696"
+                                                                             height="152.7696"
+                                                                             width="114.35643468208092">
+                                                                            <g id="textblocktransform">
+                                                                                <svg viewBox="0 0 114.35643468208092 152.7696"
+                                                                                     height="152.7696"
+                                                                                     width="114.35643468208092"
+                                                                                     id="textblock">
+                                                                                    <g>
+                                                                                        <svg viewBox="0 0 114.35643468208092 152.7696"
+                                                                                             height="152.7696"
+                                                                                             width="114.35643468208092">
+                                                                                            <g transform="matrix(1,0,0,1,0,0)">
+                                                                                                <svg width="114.35643468208092"
+                                                                                                     viewBox="0.5 -34.6 25.9 34.6"
+                                                                                                     height="152.7696"
+                                                                                                     data-palette-color="#030303">
+                                                                                                    <path d="M15.4-14.55L15.4 0 11.55 0 11.55-14.55 0.5-34.6 4.85-34.6 13.45-18.4 22.05-34.6 26.4-34.6 15.4-14.55Z"
+                                                                                                          opacity="1"
+                                                                                                          transform="matrix(1,0,0,1,0,0)"
+                                                                                                          fill="#030303"
+                                                                                                          class="wordmark-text-0"
+                                                                                                          data-fill-palette-color="primary"
+                                                                                                          id="text-0"></path>
+                                                                                                </svg>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </g>
+                                                                </svg>
+                                                            </g>
+                                                        </svg>
+                                                    </g>
+                                                </svg>
+                                            </g>
+                                            <path d="M72.637 41.215L72.637 0 319.837 0 319.837 247.2 72.637 247.2 72.637 205.985 86.414 205.985 86.414 233.423 306.06 233.423 306.06 13.777 86.414 13.777 86.414 41.215Z"
+                                                  fill="#030303" stroke="transparent"
+                                                  data-fill-palette-color="tertiary"></path>
+                                        </svg>
+                                    </g>
+                                    <defs></defs>
+                                </svg>
+                                <rect width="395.52" height="247.2" fill="none" stroke="none"
+                                      visibility="hidden"></rect>
+                            </g>
+                        </svg>
+                    </g>
+                </svg>
+                <span class="fs-4">Ypsilon</span>
+            </a>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
-<body data-controller="game" data-game-correctWord-value="">
-<div class="container text-center mt-5">
-    <h1>Hra Ypsilon</h1>
-    <button data-action="game#startGame"  data-game-target="startButton" class="btn btn-primary mt-3">Štart</button>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="py-2 link-body-emphasis text-decoration-none" href="./">Hrať znova</a>
+            </nav>
+        </div>
 
-    <div data-game-target="playArea" style="display:none;">
-        <h2 data-game-target="progress">0 z 10</h2>
-        <h2 data-game-target="word"></h2>
-        <button class="btn btn-info btn-lg" data-game-target="option1" data-action="game#checkAnswer" data-letter="i">I</button>
-        <button class="btn btn-warning btn-lg"  data-game-target="option2" data-action="game#checkAnswer" data-letter="y">Y</button>
+    </header>
+</div>
+<div class="container text-center mt-5" data-controller="game" data-game-correctWord-value="">
+    <div class="intro  p-3 pb-md-4 mx-auto text-center" data-game-target="intro">
+        <h1 class="display-1 fw-normal text-body-emphasis word">Ypsilon</h1>
+        <p class="fs-5 text-body-secondary">Hra na precvičenie písania i / y pre žiačky a žiakov prvého stupňa ZŠ.</p>
+        <button data-action="game#startGame" class="btn btn-primary mt-3">Štart</button>
     </div>
 
-    <div data-game-target="result" style="display:none;">
+    <div class="p-3" data-game-target="playArea" style="display:none;">
+        <h2 data-game-target="progress" class="pb-4">0 z 10</h2>
+        <div class="position-relative m-5 p-5 text-center text-muted bg-body border border-dashed rounded-5">
+            <h1 class="display-1 fw-normal text-body-emphasis mb-4" data-game-target="word"></h1>
+
+
+            <button class="btn btn-info btn-lg btn-option display-2" data-game-target="option1"
+                    data-action="game#checkAnswer" data-letter="i">
+                I
+            </button>
+            <button class="btn btn-warning btn-lg btn-option display-3" data-game-target="option2"
+                    data-action="game#checkAnswer"
+                    data-letter="y">Y
+            </button>
+        </div>
+    </div>
+
+    <div class="p-4" data-game-target="result" style="display:none;">
     </div>
 </div>
 
-<script src="bundle.js"></script>
-</body>
-</html>

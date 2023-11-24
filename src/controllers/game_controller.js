@@ -3,7 +3,7 @@ import {words} from '../words/words';
 
 
 export default class extends Controller {
-    static targets = ["word", "progress", "result", "playArea", "option1", "option2", "startButton"];
+    static targets = ["word", "progress", "result", "playArea", "option1", "option2", "intro"];
     static values = {
         correctWord: String
     }
@@ -20,7 +20,7 @@ export default class extends Controller {
         this.correctWordIndex = 0;
         this.playAreaTarget.style.display = "block";
         this.loadWord();
-        this.startButtonTarget.style.display = "none";
+        this.introTarget.style.display = "none";
         this.answers = [];
     }
 
@@ -80,7 +80,7 @@ export default class extends Controller {
         this.playAreaTarget.style.display = "none";
         let resultText = this.score === 10 ? "Super, všetkých <strong>10 z 10</strong> si mal správne!" : `Správne si mal <strong>${this.score} z 10</strong>.`;
 
-        this.resultTarget.innerHTML = resultText + this.resultTable() + '<br><button onclick="location.reload()" class="btn btn-primary btn-lg">Hraj opäť</button>';
+        this.resultTarget.innerHTML = '<div class="p-4">' + resultText + '</div><div class="p-4">' + this.resultTable() + '</div><br><button onclick="location.reload()" class="mt-4 btn btn-primary btn-lg">Hraj opäť</button>';
         this.resultTarget.style.display = "block";
     }
 
@@ -93,7 +93,7 @@ export default class extends Controller {
 
     showLastAnswer(isCorrect) {
         let correctWord = this.correctWordValue;
-        this.resultTarget.innerHTML = isCorrect ? `<span class="text-success"><i class="fas fa-check"></i> správne: ${correctWord}</span>` : `<span class="text-danger"><i class="fas fa-times"></i> nesprávne, správne má byť: ${correctWord}</span>`;
+        this.resultTarget.innerHTML = isCorrect ? `<span class="text-success">✅ správne: ${correctWord}</span>` : `<span class="text-danger">❌ nesprávne, správne má byť: ${correctWord}</span>`;
         this.resultTarget.style.display = "block";
     }
 
@@ -102,7 +102,7 @@ export default class extends Controller {
         for (let word in this.answers) {
             let isCorrect = this.answers[word];
             let className = isCorrect ? "text-success" : "text-danger";
-            let icon = isCorrect ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+            let icon = isCorrect ? '✅' : '❌';
             result += `<br><span class="${className}">${icon} ${word}</span>`;
         }
         return result;

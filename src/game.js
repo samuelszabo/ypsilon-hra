@@ -35,7 +35,6 @@ function loadWord() {
 
     //spočítať i a y v slove
     let iCount = 0;
-    let yCount = 0;
     let newWord = "";
     let options = ['x', 'x'];
     for (let i = 0; i < word.length; i++) {
@@ -68,7 +67,7 @@ function clicked(href) {
 }
 
 function showLastAnswer(correctWord, answer) {
-    document.getElementById("result").innerHTML = answer ? `<span class="text-success"><i class="fas fa-check"></i> ${correctWord}</span>` : `<span class="text-danger"><i class="fas fa-times"></i> ${correctWord}</span>`;
+    document.getElementById("result").innerHTML = answer ? `<span class="text-success">✅ ${correctWord}</span>` : `<span class="text-danger">❌ ${correctWord}</span>`;
     document.getElementById("result").style.display = "block";
 }
 
@@ -95,7 +94,7 @@ function endGame() {
     for (let word in answers) {
         let isCorrect = answers[word];
         let className = isCorrect ? "text-success" : "text-danger";
-        let icon = isCorrect ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+        let icon = isCorrect ? '✅' : '❌';
         resultText += `<br><span class="${className}">${icon} ${word}</span>`;
     }
     document.getElementById("result").innerHTML = resultText + '<br><button onclick="location.reload()" class="btn btn-primary btn-lg">Hraj opäť</button>';
