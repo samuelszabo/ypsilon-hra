@@ -1,7 +1,7 @@
 export const words = ["veverička", "hlina", "silný", "miska", "list", "zima", "víno", "príliv", "divoký", "svit",
     "mimo", "film", "pisár", "briliant", "vlnitý", "vitamín", "klin", "limuzína", "disk", "simulátor",
     "militant", "bilión", "minúta", "limit", "vírus", "mikrofón", "vizitka", "migrácia", "figúrka",
-    "faktor", "divízia", "limitovať", "minister", "klimatizácia", "diplomat", "rituál", "kritik", "iniciatíva", "istota",
+    "faktory", "divízia", "limitovať", "minister", "klimatizácia", "diplomat", "rituál", "kritik", "iniciatíva", "istota",
     "indián", "fiktívny", "inštitút", "indikátor", "infúzia", "pilier", "identita", "imigrácia", "ilustrácia", "infikovať",
     "imitácia", "investícia", "intuícia", "indukcia", "injekcia", "inšpirácia", "intervencia", "inštitúcia", "integrácia",
     "inovácia", "intimita", "imunita", "iluminácia", "inteligencia", "industrializácia", "individualita", "imperializmus", "iniciátor", "infraštruktúra",
