@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-<div class="container py-3">
+<div class="container py-1 py-md-3">
     <header>
-        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <div class="d-flex flex-row align-items-center pb-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                      width="64" height="40" viewBox="0 0 1500 935">
                     <g transform="matrix(1,0,0,1,-0.9090909090909918,0.3785425101214628)">
                         <svg viewBox="0 0 396 247" data-background-color="#f9f9f9" preserveAspectRatio="xMidYMid meet"
                              height="935" width="1500" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                        >
                             <g id="tight-bounds" transform="matrix(1,0,0,1,0.2400000000000091,-0.09999999999999432)">
                                 <svg viewBox="0 0 395.52 247.2" height="247.2" width="395.52">
                                     <g>
@@ -87,23 +87,23 @@
                 <span class="fs-4">Ypsilon</span>
             </a>
 
-            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <nav class="d-inline-flex mt-2 mt-0 ms-auto">
                 <a class="py-2 link-body-emphasis text-decoration-none" href="./">Hrať znova</a>
             </nav>
         </div>
 
     </header>
 </div>
-<div class="container text-center mt-5" data-controller="game" data-game-correctWord-value="">
-    <div class="intro  p-3 pb-md-4 mx-auto text-center" data-game-target="intro">
+<div class="container text-center mt-1 mt-md-3" data-controller="game" data-game-correctWord-value="">
+    <div class="intro p-3 mx-auto text-center" data-game-target="intro">
         <h1 class="display-1 fw-normal text-body-emphasis word">Ypsilon</h1>
         <p class="fs-5 text-body-secondary">Hra na precvičenie písania i / y pre žiačky a žiakov prvého stupňa ZŠ.</p>
         <button data-action="game#startGame" class="btn btn-primary mt-3">Štart</button>
     </div>
 
-    <div class="p-3" data-game-target="playArea" style="display:none;">
+    <div class="p-1 p-md-3" data-game-target="playArea" style="display:none;">
         <h2 data-game-target="progress" class="pb-4">0 z 10</h2>
-        <div class="position-relative m-5 p-5 text-center text-muted bg-body border border-dashed rounded-5">
+        <div class="position-relative m-2 m-md-5 p-2 p-md-5 text-center text-muted bg-body border border-dashed rounded-5">
             <h1 class="display-1 fw-normal text-body-emphasis mb-4" data-game-target="word"></h1>
 
 
