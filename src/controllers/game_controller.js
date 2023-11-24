@@ -78,7 +78,7 @@ export default class extends Controller {
 
     endGame() {
         this.playAreaTarget.style.display = "none";
-        let resultText = this.score === 10 ? "Super, všetkých <strong>10 z 10</strong> si mal správne!" : `Správne si mal <strong>${this.score} z 10</strong>.`;
+        let resultText = this.score === 10 ? "Super, všetkých <strong>10 z 10</strong> bolo správne!" : `Správne bolo <strong>${this.score} z 10</strong>.`;
 
         this.resultTarget.innerHTML = '<div class="p-4">' + resultText + '</div><div class="p-4">' + this.resultTable() + '</div><br><button onclick="location.reload()" class="mt-4 btn btn-primary btn-lg">Hraj opäť</button>';
         this.resultTarget.style.display = "block";
